@@ -4,8 +4,15 @@ import java.util.Scanner;
 
 public class TicTacToe {
 
-	static String[][] board = { { "1", "2", "3" }, { "4", "5", "6" }, { "7", "8", "9" } };
-	static String[][] resetBoard = { { "1", "2", "3" }, { "4", "5", "6" }, { "7", "8", "9" } };
+	static String[][] board = { 
+			{ "1", "2", "3" }, 
+			{ "4", "5", "6" }, 
+			{ "7", "8", "9" } 
+			};
+	static String[][] resetBoard = { 
+			{ "1", "2", "3" }, 
+			{ "4", "5", "6" },
+			{ "7", "8", "9" } };
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
@@ -155,8 +162,6 @@ public class TicTacToe {
 
 	static boolean GameOver() {
 		if (board[0][0].equals(board[0][1]) && board[0][1].equals((board)[0][2])) {
-			return true;
-		} else if (board[0][0].equals(board[0][1]) && board[0][1].equals((board)[0][2])) {
 			return true;
 		} else if (board[0][0].equals(board[1][1]) && board[1][1].equals((board)[2][2])) {
 			return true;
