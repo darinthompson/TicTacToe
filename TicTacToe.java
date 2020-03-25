@@ -170,6 +170,8 @@ public class TicTacToe {
 			return true;
 		} else if (board[0][2].equals(board[1][2]) && board[1][2].equals((board)[2][2])) {
 			return true;
+		} else if (board[0][2].equals(board[1][1]) && board[1][1].equals((board)[0][2])) {
+			return true;
 		} else if (!board[0][0].equals("1") && !board[0][1].equals("2") && !board[0][2].equals("3")
 				&& !board[1][0].equals("4") && !board[1][1].equals("5") && !board[1][2].equals("6")
 				&& !board[2][0].equals("7") && !board[2][1].equals("8") && !board[2][2].equals("9")) {
